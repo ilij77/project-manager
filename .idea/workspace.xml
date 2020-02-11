@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="Урок 4.1" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE" updatePackages="false">
+    <pharConfigPath>$PROJECT_DIR$/manager/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/manager/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/manager/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/manager/vendor/composer" />
+      <path value="$PROJECT_DIR$/manager/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/manager/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/manager/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/manager/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1QfJW4q4G4rnMx8qJTTnmBJoWS4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-project-manager" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$/manager/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fbd1d706" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="" />
+      <created>1568155745981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568155745981</updated>
+      <workItem from="1568155751527" duration="4051000" />
+      <workItem from="1568236380433" duration="9413000" />
+      <workItem from="1568322019368" duration="5603000" />
+      <workItem from="1568327653410" duration="6305000" />
+      <workItem from="1568406115056" duration="998000" />
+      <workItem from="1568668258845" duration="5201000" />
+      <workItem from="1568674119552" duration="6212000" />
+      <workItem from="1568754360113" duration="5910000" />
+      <workItem from="1568760584458" duration="766000" />
+      <workItem from="1568761540636" duration="2300000" />
+      <workItem from="1568763950728" duration="526000" />
+      <workItem from="1568764594286" duration="1494000" />
+      <workItem from="1568840956557" duration="1021000" />
+      <workItem from="1568842096692" duration="4669000" />
+      <workItem from="1569009868032" duration="1854000" />
+      <workItem from="1581457814053" duration="1555000" />
+      <workItem from="1581459371992" duration="241000" />
+    </task>
+    <task id="LOCAL-00001" summary="Урок 2.1">
+      <created>1568239605375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568239605375</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Урок 2.1">
+      <created>1568245346390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568245346390</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Урок 2.1">
+      <created>1568245458371</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568245458371</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Symfony установлена">
+      <created>1568331920361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568331920361</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Урок 2.2 финал">
+      <created>1568407179236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568407179236</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Урок 3.1 Финал">
+      <created>1568846137530</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568846137530</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Урок 2.1" />
+    <MESSAGE value="Symfony установлена" />
+    <MESSAGE value="Урок 2.2 финал" />
+    <MESSAGE value="Урок 3.1 Сщздание базы данных" />
+    <MESSAGE value="Урок 3.1 Финал" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 3.1 Финал" />
+  </component>
+</project>
