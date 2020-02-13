@@ -22,11 +22,8 @@ manager-init: manager-composer-install
 manager-composer-install:
 	docker-compose run --rm manager-php-cli composer install
 
-cli:
-	docker-compose run --rm manager-php-cli php website-skeleton/bin/app.php
-
 manager-test:
-	docker-compose run --rm manager-php-cli php website-skeleton/bin/phpunit
+	docker-compose run --rm manager-php-cli php bin/phpunit
 
 build-production:
 	docker build --pull --file=manager/docker/production/nginx.docker --tag ${REGISTRY_ADDRESS}/manager-nginx:${IMAGE_TAG} manager
