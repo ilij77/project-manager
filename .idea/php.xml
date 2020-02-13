@@ -104,4 +104,5 @@
       <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
     </include_path>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

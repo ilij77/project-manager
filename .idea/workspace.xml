@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="Урок 4.1" />
+    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="Урок 4.1">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/nginx.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/production/nginx.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/production/php/default.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/bin/console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/cache.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/dev/debug.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/dev/easy_log_handler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/dev/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/mailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/notifier.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/prod/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/prod/routing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/routing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/sensio_framework_extra.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/translation.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/routes.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/routes/annotations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/routes/dev/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services_test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/translations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +225,15 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-project-manager" />
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller" />
       <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/manager/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -250,7 +320,9 @@
       <workItem from="1568842096692" duration="4669000" />
       <workItem from="1569009868032" duration="1854000" />
       <workItem from="1581457814053" duration="1555000" />
-      <workItem from="1581459371992" duration="241000" />
+      <workItem from="1581459371992" duration="3348000" />
+      <workItem from="1581466921541" duration="1177000" />
+      <workItem from="1581541934412" duration="10049000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
