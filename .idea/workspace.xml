@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Flusher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/ConfirmTokenSender.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/PasswordHasher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/SignUpConfirmTokenizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,20 +187,20 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -283,7 +286,8 @@
       <workItem from="1581466921541" duration="1177000" />
       <workItem from="1581541934412" duration="10461000" />
       <workItem from="1581628626615" duration="8500000" />
-      <workItem from="1581803906019" duration="4406000" />
+      <workItem from="1581803906019" duration="5270000" />
+      <workItem from="1581887965201" duration="8558000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -341,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581634800121</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Установка ramsey/uuid">
+      <created>1581812839230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581812839230</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +380,7 @@
     <MESSAGE value="Урок 3.1 Финал" />
     <MESSAGE value="Установка Symfony 5.04" />
     <MESSAGE value="Установка postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="Установка postgres" />
+    <MESSAGE value="Установка ramsey/uuid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Установка ramsey/uuid" />
   </component>
 </project>
