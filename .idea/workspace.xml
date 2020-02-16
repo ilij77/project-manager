@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/postgres.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,22 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -50,9 +63,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response1.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -174,20 +184,20 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -232,7 +242,12 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@69285864" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -267,7 +282,8 @@
       <workItem from="1581459371992" duration="3348000" />
       <workItem from="1581466921541" duration="1177000" />
       <workItem from="1581541934412" duration="10461000" />
-      <workItem from="1581628626615" duration="6076000" />
+      <workItem from="1581628626615" duration="8500000" />
+      <workItem from="1581803906019" duration="4406000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -318,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581552585214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Установка postgres">
+      <created>1581634800121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581634800121</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +368,7 @@
     <MESSAGE value="Урок 3.1 Сщздание базы данных" />
     <MESSAGE value="Урок 3.1 Финал" />
     <MESSAGE value="Установка Symfony 5.04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Установка Symfony 5.04" />
+    <MESSAGE value="Установка postgres" />
+    <option name="LAST_COMMIT_MESSAGE" value="Установка postgres" />
   </component>
 </project>
