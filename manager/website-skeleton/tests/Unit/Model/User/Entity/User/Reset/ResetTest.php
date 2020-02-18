@@ -8,13 +8,14 @@ use App\Model\User\Entity\User\Email;
 use App\Model\User\Entity\User\Id;
 use App\Model\User\Entity\User\ResetToken;
 use App\Model\User\Entity\User\User;
+use App\Tests\Builder\User\UserBuilder;
 use Monolog\Test\TestCase;
 
 class ResetTest extends TestCase
 {
 	public function testSuccess():void
 	{
-		$user=$this->buildSignedUpByEmailUser();
+		$user=(new UserBuilder())->viaEmail()->build();
 		$now=new \DateTimeImmutable();
 		$token=new ResetToken('token',$now->modify('+1 day'));
 		$user->requestPasswordReset($token,$now);
@@ -27,7 +28,7 @@ class ResetTest extends TestCase
 
 	public function testExpiredToken():void
 	{
-		$user=$this->buildSignedUpByEmailUser();
+		$user=(new UserBuilder())->viaEmail()->build();
 		$now=new \DateTimeImmutable();
 		$token=new ResetToken('token',$now);
 		$user->requestPasswordReset($token,$now);
@@ -38,7 +39,7 @@ class ResetTest extends TestCase
 
 	public function testNotRequested():void
 	{
-		$user=$this->buildSignedUpByEmailUser();
+		$user=(new UserBuilder())->viaEmail()->build();
 		$now=new \DateTimeImmutable();
 		$this->expectExceptionMessage('Resetting is not requested.');
 		$user->passwordReset($now,'hash');
@@ -46,25 +47,8 @@ class ResetTest extends TestCase
 	}
 
 
-	private function buildSignedUpByEmailUser(): User
-	{
-		$user = $this->buildUser();
 
-		$user->signUpByEmail(
-			new Email('test@app.test'),
-			'hash',
-			$token = 'token'
-		);
 
-		return $user;
-	}
 
-	private function buildUser(): User
-	{
-		return new User(
-			Id::next(),
-			new \DateTimeImmutable()
-		);
-	}
 
 }

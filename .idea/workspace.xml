@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Network.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/ResetToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/ResetTokenSender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/ResetTokenizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Reset/Request/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Reset/Request/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Reset/Reset/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Reset/Reset/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/CreateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
@@ -192,20 +180,20 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-project-manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/tests" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/tests" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -294,7 +282,7 @@
       <workItem from="1581803906019" duration="5270000" />
       <workItem from="1581887965201" duration="9232000" />
       <workItem from="1581974412904" duration="274000" />
-      <workItem from="1581974738634" duration="11311000" />
+      <workItem from="1581974738634" duration="12608000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -366,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581897125157</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create network auth and password reset">
+      <created>1581986165770</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581986165770</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,6 +391,7 @@
     <MESSAGE value="Установка postgres" />
     <MESSAGE value="Установка ramsey/uuid" />
     <MESSAGE value="Add signup logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add signup logic" />
+    <MESSAGE value="Create network auth and password reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create network auth and password reset" />
   </component>
 </project>

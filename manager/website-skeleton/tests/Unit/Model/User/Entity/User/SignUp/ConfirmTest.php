@@ -7,13 +7,14 @@ namespace App\Test\Unit\Model\User\Entity\User\SignUp;
 use App\Model\User\Entity\User\Email;
 use App\Model\User\Entity\User\Id;
 use App\Model\User\Entity\User\User;
+use App\Tests\Builder\User\UserBuilder;
 use PHPUnit\Framework\TestCase;
 
 class ConfirmTest extends TestCase
 {
 	public function testSuccess():void
 	{
-		$user=$this->buildSignUpUser();
+		$user=$user=(new UserBuilder())->viaEmail()->build();
 		$user->confirmSignUp();
 		self::assertFalse($user->isWait());
 		self::assertTrue($user->isActive());
@@ -23,24 +24,13 @@ class ConfirmTest extends TestCase
 
 	public function testAlready():void
 	{
-		$user=$this->buildSignUpUser();
+		$user=$user=(new UserBuilder())->viaEmail()->build();
 		$user->confirmSignUp();
 		$this->expectExceptionMessage('User is already confirmed.');
 		$user->confirmSignUp();
 
 	}
 
-	private function buildSignUpUser():User
-	{
 
-		$user=new User(
-			$id=Id::next(),
-			$date=new \DateTimeImmutable());
-		$user->signUpByEmail($email=new Email('test@app.test'),
-			$hash='hash',
-			$token='token');
-		return $user;
-
-	}
 
 }
