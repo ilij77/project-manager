@@ -46,26 +46,30 @@ class User
 	 * @var ResetToken|null
 	 */
 	private $resetToken;
+	/**
+	 * @var Role
+	 */
+	private $rele;
 
-	public function __construct(Id $id,\DateTimeImmutable $data)
+	private function __construct(Id $id,\DateTimeImmutable $data)
 	{
 
 
 		$this->id = $id;
 		$this->data = $data;
-		$this->status=self::STATUS_NEW;
+		$this->role=Role::user();
 		$this->networks=new ArrayCollection();
 	}
 
-	public function signUpByEmail(Email $email,string $hash,string $token):void
+	public static function signUpByEmail(Id $id,\DateTimeImmutable $date,Email $email,string $hash,string $token):self
 	{
-		if (!$this->isNew()){
-			throw new \DomainException('User is already signed up.');
-		}
-		$this->email=$email;
-		$this->passwordHash=$hash;
-		$this->confirmToken=$token;
-		$this->status=self::STATUS_WAIT;
+		$user=new self($id,$date);
+
+		$user->email=$email;
+		$user->passwordHash=$hash;
+		$user->confirmToken=$token;
+		$user->status=self::STATUS_WAIT;
+		return $user;
 
 	}
 
@@ -79,13 +83,12 @@ class User
 
 	}
 
-	public function signUpByNetwork(string $network,string $identity):void
+	public  static function signUpByNetwork(Id $id,\DateTimeImmutable $date,string $network,string $identity):self
 	{
-		if (!$this->isNew()){
-			throw new \DomainException('User is already signed up.');
-		}
-		$this->attachNetwork($network,$identity);
-		$this->status=self::STATUS_ACTIVE;
+		$user=new self($id,$date);
+		$user->attachNetwork($network,$identity);
+		$user->status=self::STATUS_ACTIVE;
+		return $user;
 
 
 	}
@@ -189,6 +192,21 @@ class User
 	public function getNetworks():array
 	{
 		return $this->networks->toArray();
+	}
+
+
+	public function getRole(): Role
+	{
+		return $this->role;
+	}
+
+	public function changeRole(Role $role):void
+	{
+		if ($this->role->isEqual($role)){
+			throw new \DomainException('Role is already same.');
+		}
+		$this->role=$role;
+
 	}
 
 }
