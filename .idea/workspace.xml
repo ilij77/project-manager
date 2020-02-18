@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,7 +280,7 @@
       <workItem from="1581803906019" duration="5270000" />
       <workItem from="1581887965201" duration="9232000" />
       <workItem from="1581974412904" duration="274000" />
-      <workItem from="1581974738634" duration="12608000" />
+      <workItem from="1581974738634" duration="13711000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -361,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581986165770</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Create TestUserBuilder">
+      <created>1581987392115</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581987392115</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +397,7 @@
     <MESSAGE value="Установка ramsey/uuid" />
     <MESSAGE value="Add signup logic" />
     <MESSAGE value="Create network auth and password reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create network auth and password reset" />
+    <MESSAGE value="Create TestUserBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create TestUserBuilder" />
   </component>
 </project>

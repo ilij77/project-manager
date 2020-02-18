@@ -15,7 +15,7 @@ class ResetTest extends TestCase
 {
 	public function testSuccess():void
 	{
-		$user=(new UserBuilder())->viaEmail()->build();
+		$user=(new UserBuilder())->viaEmail()->confirmed()->build();
 		$now=new \DateTimeImmutable();
 		$token=new ResetToken('token',$now->modify('+1 day'));
 		$user->requestPasswordReset($token,$now);
@@ -28,7 +28,7 @@ class ResetTest extends TestCase
 
 	public function testExpiredToken():void
 	{
-		$user=(new UserBuilder())->viaEmail()->build();
+		$user=(new UserBuilder())->viaEmail()->confirmed()->build();
 		$now=new \DateTimeImmutable();
 		$token=new ResetToken('token',$now);
 		$user->requestPasswordReset($token,$now);
@@ -39,7 +39,7 @@ class ResetTest extends TestCase
 
 	public function testNotRequested():void
 	{
-		$user=(new UserBuilder())->viaEmail()->build();
+		$user=(new UserBuilder())->viaEmail()->confirmed()->build();
 		$now=new \DateTimeImmutable();
 		$this->expectExceptionMessage('Resetting is not requested.');
 		$user->passwordReset($now,'hash');
