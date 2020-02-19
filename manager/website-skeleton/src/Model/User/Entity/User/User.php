@@ -5,7 +5,16 @@ declare(strict_types=1);
 namespace App\Model\User\Entity\User;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks
+ * @ORM\Table(name="user_users",uniqueConstraints={
+ *	 @ORM\UniqueConstraint(columns={"email"}),
+ *	 @ORM\UniqueConstraint(columns={"reset_token_token"}),
+ *	 })
+ */
 class User
 {
 
@@ -13,43 +22,52 @@ class User
 	private const STATUS_WAIT='wait';
 	private const STATUS_ACTIVE='active';
 	/**
-	 * @var Id
+	 * @ORM\Column(type="user_user_id")
+	 * @ORM\Id()
 	 */
 	private $id;
 	/**
 	 * @var \DateTimeImmutable
+	 * @ORM\Column(type="datetime_immutable")
 	 */
 	private $data;
 	/**
 	 * @var Email|null
+	 * @ORM\Column(type="user_user_email",nullable=true)
 	 */
 	private $email;
 	/**
 	 * @var string|null
+	 * @ORM\Column(type="string",name="password_hash",nullable=true)
 	 */
 	private $passwordHash;
 	/**
 	 * @var string|null
+	 * @ORM\Column(type="string", name="confirm_token",nullable=true)
 	 */
     private $confirmToken;
 	/**
 	 * @var string
+	 * @ORM\Column(type="string",length=16)
 	 */
     private $status;
 
 	/**
 	 * @var Network[]|ArrayCollection
+	 * @ORM\OneToMany(targetEntity="Network",mappedBy="user",orphanRemoval=true,cascade={"persist"})
 	 */
 	private $networks;
 
 	/**
 	 * @var ResetToken|null
+	 * @ORM\Embedded(class="ResetToken",columnPrefix="reset_token_")
 	 */
 	private $resetToken;
 	/**
 	 * @var Role
+	 * @ORM\Column(type="user_user_role",length=16)
 	 */
-	private $rele;
+	private $role;
 
 	private function __construct(Id $id,\DateTimeImmutable $data)
 	{

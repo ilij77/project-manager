@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Role/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Role/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/RoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200219000623.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/EmailType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/RoleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Network.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/ResetToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/ResetToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/CreateTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,41 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="app: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="app: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="app: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="app: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="user_user_networks: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="app: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="user_users: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -247,7 +280,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@69285864" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@947cb577" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@947cb577" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@dcb3fe2" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +327,7 @@
       <workItem from="1581887965201" duration="9232000" />
       <workItem from="1581974412904" duration="274000" />
       <workItem from="1581974738634" duration="14350000" />
-      <workItem from="1582061247269" duration="5650000" />
+      <workItem from="1582061247269" duration="11708000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -382,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581988492893</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add roles">
+      <created>1582066929159</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582066929159</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +460,7 @@
     <MESSAGE value="Create network auth and password reset" />
     <MESSAGE value="Create TestUserBuilder" />
     <MESSAGE value="Add user active checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user active checking" />
+    <MESSAGE value="Add roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add roles" />
   </component>
 </project>
