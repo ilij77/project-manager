@@ -9,4 +9,10 @@ class Command
 	 */
 	public $token;
 
+	public function __construct($token)
+	{
+
+		$this->token = $token;
+	}
+
 }

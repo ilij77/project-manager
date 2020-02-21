@@ -9,13 +9,9 @@ use App\Model\User\Entity\User\UserRepository;
 
 class Handler
 {
-	/**
-	 * @var UserRepository
-	 */
+
 	private $users;
-	/**
-	 * @var Flusher
-	 */
+
 	private $flusher;
 
 	public function __construct(UserRepository $users, Flusher $flusher)
