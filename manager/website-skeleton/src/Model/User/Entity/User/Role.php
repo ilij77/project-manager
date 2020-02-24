@@ -47,7 +47,7 @@ class Role
 
 	public function isEqual(self $role):bool
 	{
-		return $this->getNome()===$role->getNome();
+		return $this->getName()===$role->getName();
 
 	}
 

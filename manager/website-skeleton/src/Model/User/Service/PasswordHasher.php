@@ -15,4 +15,10 @@ class PasswordHasher
 
 	}
 
+	public function validate(string $password,string $hash):bool
+	{
+		return password_verify($password,$hash);
+
+	}
+
 }
