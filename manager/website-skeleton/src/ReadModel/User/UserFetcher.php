@@ -37,7 +37,7 @@ class UserFetcher
 				'status'
 			)
 			->from('user_users')
-			->where('email=:$email')
+			->where('email=:email')
 			->setParameter(':email',$email)
 			->execute();
 		$stmt->setFetchMode(FetchMode::CUSTOM_OBJECT,AuthView::class);
