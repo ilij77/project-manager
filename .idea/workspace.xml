@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knpu_oauth2_client.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/test/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/OAuth/FacebookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserIdentity.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserIdentity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/auth/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/auth/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +225,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-project-manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Security" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -224,11 +237,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Security" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/auth" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/mail/user" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -319,6 +332,8 @@
       <workItem from="1582247781876" duration="1147000" />
       <workItem from="1582322353903" duration="11494000" />
       <workItem from="1582579546169" duration="4174000" />
+      <workItem from="1582671237591" duration="3270000" />
+      <workItem from="1582751143881" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -439,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582326528855</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Correction of errors">
+      <created>1582670542192</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582670542192</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +498,7 @@
     <MESSAGE value="Create database" />
     <MESSAGE value="Install MailHog" />
     <MESSAGE value="Add UserFetcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UserFetcher" />
+    <MESSAGE value="Correction of errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction of errors" />
   </component>
 </project>
