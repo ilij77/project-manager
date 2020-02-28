@@ -3,6 +3,9 @@ down: docker-down
 restart: docker-down docker-up
 init: docker-down-clear manager-clear docker-pull docker-build docker-up manager-init
 test: manager-test
+dev: manager-assets-dev
+
+
 
 docker-up:
 	docker-compose up -d

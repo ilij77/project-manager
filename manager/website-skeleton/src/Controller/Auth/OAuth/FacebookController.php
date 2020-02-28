@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class FacebookController extends AbstractController
 {
 	/**
-	 * @Route("/oauth.facebook",name="oaith.facebook")
+	 * @Route("/oauth.facebook",name="oauth.facebook")
 	 * @param ClientRegistry $clientRegistry
 	 * @return Response
 	 */
