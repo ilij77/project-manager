@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/redis.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Command/User/ConfirmCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/ShortView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/ByToken/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/ByToken/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,24 +218,24 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/ByToken" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User" />
-      <recent name="$PROJECT_DIR$/manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/ByToken" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/docker" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Security" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -330,7 +329,7 @@
       <workItem from="1582671237591" duration="3270000" />
       <workItem from="1582751143881" duration="13031000" />
       <workItem from="1582837008623" duration="13466000" />
-      <workItem from="1583097092180" duration="2855000" />
+      <workItem from="1583097092180" duration="5512000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -479,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582850610053</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Install Predis/Predis">
+      <created>1583100340014</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583100340014</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,6 +526,7 @@
     <MESSAGE value="Install symfony encore" />
     <MESSAGE value="Install sass-loader &amp; node-sass" />
     <MESSAGE value="Install Core Ui theme." />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Core Ui theme." />
+    <MESSAGE value="Install Predis/Predis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install Predis/Predis" />
   </component>
 </project>
