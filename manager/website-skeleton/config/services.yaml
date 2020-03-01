@@ -23,6 +23,14 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+    Predis\Client:
+        arguments:
+            - '%env(REDIS_URL)%'
+
+    Symfony\Component\HttpFoundation\Session\Storage\Handler\RedisSessionHandler:
+        arguments:
+            - '@Predis\Client'
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
