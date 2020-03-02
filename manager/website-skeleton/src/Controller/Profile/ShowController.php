@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Profile;
 
 
 use App\ReadModel\User\UserFetcher;
@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ProfileController extends AbstractController
+class ShowController extends AbstractController
 {
 	/**
 	 * @var UserFetcher
