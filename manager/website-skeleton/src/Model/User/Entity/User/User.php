@@ -30,7 +30,7 @@ class User
 	 * @var \DateTimeImmutable
 	 * @ORM\Column(type="datetime_immutable")
 	 */
-	private $data;
+	private $date;
 	/**
 	 * @var Email|null
 	 * @ORM\Column(type="user_user_email",nullable=true)
@@ -69,12 +69,12 @@ class User
 	 */
 	private $role;
 
-	private function __construct(Id $id,\DateTimeImmutable $data)
+	private function __construct(Id $id,\DateTimeImmutable $date)
 	{
 
 
 		$this->id = $id;
-		$this->data = $data;
+		$this->date = $date;
 		$this->role=Role::user();
 		$this->networks=new ArrayCollection();
 	}
@@ -189,7 +189,7 @@ class User
 	 */
 	public function getData(): \DateTimeImmutable
 	{
-		return $this->data;
+		return $this->date;
 	}
 
 

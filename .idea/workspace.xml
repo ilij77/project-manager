@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/ConfirmTokenSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/SignUpConfirmTokenSender.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.ready" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200219000623.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200219000623.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,11 +225,11 @@
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -325,7 +324,7 @@
       <workItem from="1582751143881" duration="13031000" />
       <workItem from="1582837008623" duration="13466000" />
       <workItem from="1583097092180" duration="10924000" />
-      <workItem from="1583184807403" duration="5720000" />
+      <workItem from="1583184807403" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -502,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583188444885</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changes theme styles.">
+      <created>1583191177709</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1583191177709</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,6 +553,7 @@
     <MESSAGE value="Add user confirm console command" />
     <MESSAGE value="Add profile page." />
     <MESSAGE value="Add user role and status widgets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user role and status widgets." />
+    <MESSAGE value="Changes theme styles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes theme styles." />
   </component>
 </project>
