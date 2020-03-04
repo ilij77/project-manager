@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/EmailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200303223650.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/NewEmailConfirmTokenSender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Service/NewEmailConfirmTokenizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Email/Confirm/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Email/Confirm/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Email/Request/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Email/Request/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Email/Request/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile/email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/mail/user/email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Email/ConfirmTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Unit/Model/User/Email/RequestTest.php" afterDir="false" />
+    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="Add email changing.">
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/OAuth/FacebookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Attach/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Network/Attach/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knpu_oauth2_client.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knpu_oauth2_client.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/ShowController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserIdentity.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserIdentity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/UserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/auth/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/auth/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +221,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-project-manager" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -294,7 +291,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e1e24ee1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@419678f5" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7321c58e" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -347,7 +344,8 @@
       <workItem from="1582837008623" duration="13466000" />
       <workItem from="1583097092180" duration="10924000" />
       <workItem from="1583184807403" duration="9873000" />
-      <workItem from="1583269086708" duration="6348000" />
+      <workItem from="1583269086708" duration="10578000" />
+      <workItem from="1583357259949" duration="4482000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -538,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583192096448</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add email changing.">
+      <created>1583275484769</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1583275484769</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Symfony установлена" />
     <MESSAGE value="Урок 2.2 финал" />
     <MESSAGE value="Урок 3.1 Сщздание базы данных" />
     <MESSAGE value="Урок 3.1 Финал" />
@@ -584,6 +588,7 @@
     <MESSAGE value="Add user role and status widgets." />
     <MESSAGE value="Changes theme styles." />
     <MESSAGE value="Correct migrations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct migrations." />
+    <MESSAGE value="Add email changing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add email changing." />
   </component>
 </project>

@@ -31,13 +31,8 @@
                         <th>Created</th>
                         <td>{{ user.date|date('Y-m-d H:i:s') }}</td>
                     </tr>
-                    {% if user.email %}
-                        <tr>
-                            <th>Email</th>
-                            <td>{{ user.email }}</td>
-                        </tr>
-                    {% endif %}
-                    <tr>
+
+                     <tr>
                         <th>Role</th>
                         <td>{{ user_role(user.role) }}</td>
                     </tr>
@@ -50,22 +45,23 @@
         </div>
     </div>
 
-    {% if user.networks %}
-        <div class="card">
-            <div class="card-header">Networks</div>
-            <div class="card-body">
-                <table class="table table-bordered mb-0">
+    <div class="card">
+        <div class="card-header">Networks</div>
+        <div class="card-body">
+            {% if user.networks %}
+                <table class="table table-bordered">
                     <tbody>
-                        {% for network in user.networks %}
-                            <tr>
-                                <th>{{ network.network }}</th>
-                                <td>{{ network.identity }}</td>
-                            </tr>
-                        {% endfor %}
+                    {% for network in user.networks %}
+                        <tr>
+                            <th>{{ network.network }}</th>
+                            <td>{{ network.identity }}</td>
+                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
-            </div>
+            {% endif %}
+            <a href="{{ path('profile.oauth.facebook') }}" class="btn btn-facebook">Attach Facebook</a>
         </div>
-    {% endif %}
+    </div>
 
 {% endblock %}
