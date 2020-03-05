@@ -47,6 +47,11 @@ class User
 	 */
     private $confirmToken;
 	/**
+	 * @var Name
+	 * @ORM\Embedded(class="Name")
+	 */
+    private $name;
+	/**
 	 * @var string
 	 * @ORM\Column(type="string",length=16)
 	 */
@@ -79,19 +84,20 @@ class User
 	 */
 	private $role;
 
-	private function __construct(Id $id,\DateTimeImmutable $date)
+	private function __construct(Id $id,\DateTimeImmutable $date,Name $name)
 	{
 
 
+		$this->name=$name;
 		$this->id = $id;
 		$this->date = $date;
 		$this->role=Role::user();
 		$this->networks=new ArrayCollection();
 	}
 
-	public static function signUpByEmail(Id $id,\DateTimeImmutable $date,Email $email,string $hash,string $token):self
+	public static function signUpByEmail(Id $id,\DateTimeImmutable $date,Name $name,Email $email,string $hash,string $token):self
 	{
-		$user=new self($id,$date);
+		$user=new self($id,$date,$name);
 
 		$user->email=$email;
 		$user->passwordHash=$hash;
@@ -111,9 +117,9 @@ class User
 
 	}
 
-	public  static function signUpByNetwork(Id $id,\DateTimeImmutable $date,string $network,string $identity):self
+	public  static function signUpByNetwork(Id $id,\DateTimeImmutable $date,Name $name,string $network,string $identity):self
 	{
-		$user=new self($id,$date);
+		$user=new self($id,$date,$name);
 		$user->attachNetwork($network,$identity);
 		$user->status=self::STATUS_ACTIVE;
 		return $user;
@@ -131,6 +137,21 @@ class User
 		$this->networks->add(new Network($this,$network,$identity));
 
 	}
+	public function detachNetwork(string $network,string $identity):void
+	{
+		foreach ($this->networks as $existing){
+			if ($existing->isFor($network,$identity)){
+				if (!$this->email && $this->networks->count()===1){
+					throw new \DomainException('Unable to detach the last identity.');
+				}
+				$this->networks->removeElement($existing);
+				return;
+			}
+		}
+		throw new \DomainException('Network is not attached.');
+
+	}
+
 
 	public function requestPasswordReset(ResetToken $token, \DateTimeImmutable $date):void
 	{
@@ -274,6 +295,20 @@ class User
 	public function getNewEmailToken(): ?string
 	{
 		return $this->newEmailToken;
+	}
+
+	/**
+	 * @return Name
+	 */
+	public function getName(): Name
+	{
+		return $this->name;
+	}
+
+	public function changeName(Name $name):void
+	{
+		$this->name=$name;
+
 	}
 
 }
