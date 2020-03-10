@@ -14,7 +14,7 @@ use App\Model\User\Service\PasswordGenerator;
 use App\Model\User\Service\PasswordHasher;
 use App\ReadModel\User\UserFetcher;
 
-class handler
+class Handler
 {
 
 	private $users;

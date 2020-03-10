@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Model\User\UseCase\block;
+namespace App\Model\User\UseCase\Block;
 
 
 use App\Model\Flusher;

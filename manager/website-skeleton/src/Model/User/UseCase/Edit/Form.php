@@ -15,7 +15,7 @@ class Form extends AbstractType
 	{
 		$builder
 			->add('firstName',Type\TextType::class,['label'=>'First Name'])
-			->add('lasttName',Type\TextType::class,['label'=>'Last Name'])
+			->add('lastName',Type\TextType::class,['label'=>'Last Name'])
 			->add('email',Type\EmailType::class,['label'=>'Email']);
 
 	}

@@ -35,7 +35,7 @@ class Command
 		$command=new self($user->getId()->getValue());
 		$command->email=$user->getEmail() ? $user->getEmail()->getValue() :null;
 		$command->firstName=$user->getName()->getFirst();
-		$command->lasttName=$user->getName()->getLast();
+		$command->lastName=$user->getName()->getLast();
 		return $command;
 
 

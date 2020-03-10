@@ -358,4 +358,12 @@ class User
 
 	}
 
+	/**
+	 * @return \DateTimeImmutable
+	 */
+	public function getDate(): \DateTimeImmutable
+	{
+		return $this->date;
+	}
+
 }
