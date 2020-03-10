@@ -19,8 +19,9 @@ class User
 {
 
 
-	private const STATUS_WAIT='wait';
+	public const STATUS_WAIT='wait';
 	public const STATUS_ACTIVE='active';
+	public const STATUS_BLOCKED='blocked';
 	/**
 	 * @ORM\Column(type="user_user_id")
 	 * @ORM\Id()
@@ -93,6 +94,23 @@ class User
 		$this->date = $date;
 		$this->role=Role::user();
 		$this->networks=new ArrayCollection();
+	}
+
+	public static function create(Id $id,\DateTimeImmutable $date,Name $name, Email $email, string $hash):self
+	{
+		$user=new self($id,$date,$name);
+		$user->email=$email;
+		$user->passwordHash=$hash;
+		$user->status=self::STATUS_ACTIVE;
+		return $user;
+
+	}
+
+	public function edit(Email $email,Name $name):void
+	{
+		$this->name=$name;
+		$this->email=$email;
+
 	}
 
 	public static function signUpByEmail(Id $id,\DateTimeImmutable $date,Name $name,Email $email,string $hash,string $token):self
@@ -251,6 +269,12 @@ class User
 	}
 
 
+	public function getStatus(): string
+	{
+		return $this->status;
+	}
+
+
 	public function getPasswordHash(): ?string
 	{
 		return $this->passwordHash;
@@ -282,6 +306,29 @@ class User
 			throw new \DomainException('Role is already same.');
 		}
 		$this->role=$role;
+
+	}
+
+	public function activate():void
+	{
+		if ($this->isActive()){
+			throw new \DomainException('User is already active.');
+		}
+		$this->status=self::STATUS_ACTIVE;
+
+	}
+	public function block():void
+	{
+		if ($this->isBlocked()){
+			throw new \DomainException('User is already blocked.');
+		}
+		$this->status=self::STATUS_BLOCKED;
+
+	}
+
+	public function isBlocked():bool
+	{
+		return $this->status===self::STATUS_BLOCKED;
 
 	}
 
