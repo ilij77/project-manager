@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knp_paginator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,19 +216,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/users" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Role" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/config/packages" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/users" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Role" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -337,7 +329,7 @@
       <workItem from="1583443962390" duration="8137000" />
       <workItem from="1583789530395" duration="11292000" />
       <workItem from="1583875091289" duration="12019000" />
-      <workItem from="1583961072314" duration="1850000" />
+      <workItem from="1583961072314" duration="2783000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -563,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583884084400</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Install knp-paginator-bundle.">
+      <created>1583962966362</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1583962966362</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Установка postgres" />
     <MESSAGE value="Установка ramsey/uuid" />
     <MESSAGE value="Add signup logic" />
     <MESSAGE value="Create network auth and password reset" />
@@ -609,6 +607,7 @@
     <MESSAGE value="Add profile name." />
     <MESSAGE value="Add user pages and filter." />
     <MESSAGE value="Correction errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction errors." />
+    <MESSAGE value="Install knp-paginator-bundle." />
+    <option name="LAST_COMMIT_MESSAGE" value="Install knp-paginator-bundle." />
   </component>
 </project>
