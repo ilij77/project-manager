@@ -15,9 +15,10 @@ main {
   flex-wrap: wrap;
   margin-bottom: 20px;
 
-  & >*{
-    margin-bottom: 4px;
-    &:last-child{
+  & > * {
+    margin-right: 4px;
+
+    &:last-child {
       margin-right: 0;
     }
   }

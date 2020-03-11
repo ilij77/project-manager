@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knp_paginator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Create/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Create/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Create/handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Create/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Edit/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +219,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/config/packages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -333,7 +336,8 @@
       <workItem from="1583357259949" duration="7018000" />
       <workItem from="1583443962390" duration="8137000" />
       <workItem from="1583789530395" duration="11292000" />
-      <workItem from="1583875091289" duration="8946000" />
+      <workItem from="1583875091289" duration="12019000" />
+      <workItem from="1583961072314" duration="1850000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -552,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583881997755</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Correction errors.">
+      <created>1583884084400</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1583884084400</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Установка Symfony 5.04" />
     <MESSAGE value="Установка postgres" />
     <MESSAGE value="Установка ramsey/uuid" />
     <MESSAGE value="Add signup logic" />
@@ -598,6 +608,7 @@
     <MESSAGE value="Add profile network attach." />
     <MESSAGE value="Add profile name." />
     <MESSAGE value="Add user pages and filter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user pages and filter." />
+    <MESSAGE value="Correction errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction errors." />
   </component>
 </project>
