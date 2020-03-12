@@ -2,22 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/NotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/override/sortable_link.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/GroupsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/GroupFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200312223810.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Group/Group.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Group/GroupRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Group/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Group/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Create/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Edit/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Edit/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Edit/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Remove/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Remove/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/GroupFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knp_paginator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knp_paginator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/NameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/NameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/ShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Name/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Name/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/NetworkView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/DetailView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/profile/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,24 +232,24 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Remove" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Group" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/config/packages" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Block" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/users" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/Role" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -341,7 +350,8 @@
       <workItem from="1583443962390" duration="8137000" />
       <workItem from="1583789530395" duration="11292000" />
       <workItem from="1583875091289" duration="12019000" />
-      <workItem from="1583961072314" duration="8303000" />
+      <workItem from="1583961072314" duration="8429000" />
+      <workItem from="1584047039054" duration="8792000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -581,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583963883352</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Changed user fetcher.">
+      <created>1583971604215</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583971604215</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +619,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add signup logic" />
     <MESSAGE value="Create network auth and password reset" />
     <MESSAGE value="Create TestUserBuilder" />
     <MESSAGE value="Add user active checking" />
@@ -627,6 +643,7 @@
     <MESSAGE value="Correction errors." />
     <MESSAGE value="Install knp-paginator-bundle." />
     <MESSAGE value="Add sorting." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sorting." />
+    <MESSAGE value="Changed user fetcher." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed user fetcher." />
   </component>
 </project>
