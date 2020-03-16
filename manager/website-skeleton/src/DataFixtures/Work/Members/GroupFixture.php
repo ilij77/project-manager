@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-namespace App\DataFixtures\Work;
+namespace App\DataFixtures\Work\Members;
 use App\Model\Work\Entity\Members\Group\Group;
 use App\Model\Work\Entity\Members\Group\Id;
 use Doctrine\Bundle\FixturesBundle\Fixture;
