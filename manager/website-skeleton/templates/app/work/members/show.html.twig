@@ -23,6 +23,12 @@
                 <button type="submit" class="btn btn-danger">Archive</button>
             </form>
         {% endif %}
+        {% if member.archived %}
+            <form action="{{ path('work.members.reinstate', {'id': member.id}) }}" method="post" onsubmit="return confirm('Are you sure?')">
+                <input type="hidden" name="token" value="{{ csrf_token('reinstate') }}" />
+                <button type="submit" class="btn btn-success">Reinstate</button>
+            </form>
+        {% endif %}
 
     </div>
 

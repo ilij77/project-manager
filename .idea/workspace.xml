@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/_tabs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/_tabs.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/knp_menu.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/SidebarMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/override/menu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/override/sortable_link.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/MembersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/Id.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/MemberRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Members/Member/MemberRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Group/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Member/Create/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Member/Create/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/GroupFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/GroupFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/Member/MemberFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/Member/MemberFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Widget/Work/Members/Member/StatusWidget.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Widget/Work/Members/Member/StatusWidget.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/users/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/move.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/move.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,24 +239,24 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/Widget" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Member/Reinstate" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Members/Member/Move" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Members" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/User/UseCase/SignUp/Confirm/Manual" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/config/packages" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/groups" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/Widget" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -363,7 +360,8 @@
       <workItem from="1583961072314" duration="8429000" />
       <workItem from="1584047039054" duration="11314000" />
       <workItem from="1584306271721" duration="16226000" />
-      <workItem from="1584395149206" duration="13431000" />
+      <workItem from="1584395149206" duration="16580000" />
+      <workItem from="1584480166486" duration="4377000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -624,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584400654048</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add work members link and tabs.">
+      <created>1584408882370</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1584408882370</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add user active checking" />
     <MESSAGE value="Add roles" />
     <MESSAGE value="Create database" />
     <MESSAGE value="Install MailHog" />
@@ -670,6 +674,7 @@
     <MESSAGE value="Changed user fetcher." />
     <MESSAGE value="Add work member groups." />
     <MESSAGE value="Add work members." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add work members." />
+    <MESSAGE value="Add work members link and tabs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add work members link and tabs." />
   </component>
 </project>

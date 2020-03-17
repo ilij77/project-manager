@@ -145,14 +145,16 @@ class MembersController extends AbstractController
 		$command=Move\Command::fromMember($member);
 		$form=$this->createForm(Move\Form::class,$command);
 		$form->handleRequest($request);
-		try{
-			$handler->handle($command);
-			return $this->redirectToRoute('work.members.show',['id'=>$member->getId()]);
-		}catch (\DomainException $e){
-			$this->logger->error($e->getMessage(),['exception'=>$e]);
-			$this->addFlash('error',$e->getMessage());
+		if ($form->isSubmitted() && $form->isValid()) {
+			try {
+				$handler->handle($command);
+				return $this->redirectToRoute('work.members.show', ['id' => $member->getId()]);
+			} catch (\DomainException $e) {
+				$this->logger->error($e->getMessage(), ['exception' => $e]);
+				$this->addFlash('error', $e->getMessage());
+			}
 		}
-		return $this->render('app/work/members.move.html.twig',[
+		return $this->render('app/work/members/move.html.twig',[
 			'member'=>$member,
 			'form'=>$form->createView(),
 		]);
