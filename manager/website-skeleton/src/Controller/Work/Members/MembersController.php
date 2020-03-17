@@ -22,7 +22,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\ReadModel\Work\Members\Member\Filter;
 
 /**
- * @Route("/work/members",name="work.members")
+ * @Route("/work/members", name="work.members")
  * @IsGranted("ROLE_WORK_MANAGE_MEMBERS")
  */
 class MembersController extends AbstractController
@@ -66,36 +66,42 @@ class MembersController extends AbstractController
 
 
 	/**
-	 * @Route("/create",name=".create"))
+	 * @Route("/create/{id}", name=".create")
 	 * @param User $user
 	 * @param Request $request
-	 * @param MemberFetcher $fetcher
+	 * @param MemberFetcher $members
 	 * @param Create\Handler $handler
 	 * @return Response
 	 */
-	public function create(User $user, Request $request, MemberFetcher $fetcher, Create\Handler $handler ):Response
+	public function create(User $user, Request $request, MemberFetcher $members, Create\Handler $handler): Response
 	{
-		$command=new Create\Command($user->getId()->getValue());
-		$command->firstName=$user->getName()->getFirst();
-		$command->lastName=$user->getName()->getLast();
-		$command->email=$user->getEmail()->getValue();
-		$form=$this->createForm(Create\Form::class,$command);
+		if ($members->exists($user->getId()->getValue())) {
+			$this->addFlash('error', 'Member already exists.');
+			return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
+		}
+
+		$command = new Create\Command($user->getId()->getValue());
+		$command->firstName = $user->getName()->getFirst();
+		$command->lastName = $user->getName()->getLast();
+		$command->email = $user->getEmail() ? $user->getEmail()->getValue() : null;
+
+		$form = $this->createForm(Create\Form::class, $command);
 		$form->handleRequest($request);
-		if ($form->isSubmitted() && $form->isValid()){
-			try{
+
+		if ($form->isSubmitted() && $form->isValid()) {
+			try {
 				$handler->handle($command);
-				return $this->redirectToRoute('work.members.show',['id'=>$user->getId()]);
-			}catch (\DomainException $e){
-				$this->logger->error($e->getMessage(),['exception'=>$e]);
-				$this->addFlash('error',$e->getMessage());
+				return $this->redirectToRoute('work.members.show', ['id' => $user->getId()]);
+			} catch (\DomainException $e) {
+				$this->logger->error($e->getMessage(), ['exception' => $e]);
+				$this->addFlash('error', $e->getMessage());
 			}
 		}
-		return $this->render('app/work/members/create.html.twig',[
-			'form'=>$form->createView()
+
+		return $this->render('app/work/members/create.html.twig', [
+			'form' => $form->createView(),
 		]);
-
 	}
-
 	/**
 	 * @Route("/{id}/edit",name=".edit")
 	 * @param Member $member

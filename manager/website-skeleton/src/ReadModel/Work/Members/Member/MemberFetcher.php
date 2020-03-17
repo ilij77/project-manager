@@ -87,7 +87,7 @@ class MemberFetcher
 	{
 		return $this->connection->createQueryBuilder()
 			->select('COUNT(id)')
-			->from('work_members_member')
+			->from('work_members_members')
 			->where('id=:id')
 			->setParameter(':id',$id)
 			->execute()->fetchColumn()>0;

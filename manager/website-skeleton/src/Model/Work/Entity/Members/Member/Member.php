@@ -86,9 +86,9 @@ class Member
 
 	}
 
-	public function isArchived():void
+	public function isArchived():bool
 	{
-		return;$this->status->isArchived();
+		return $this->status->isArchived();
 
 	}
 

@@ -28,7 +28,7 @@ class Form extends AbstractType
 		$builder
 			->add('group',Type\ChoiceType::class,['choices'=>array_flip($this->groups->assoc())])
 			->add('firstName',Type\TextType::class)
-			->add('lasttName',Type\TextType::class)
+			->add('lastName',Type\TextType::class)
 			->add('email',Type\EmailType::class);
 
 

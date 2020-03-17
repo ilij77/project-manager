@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block body %}
-
+    {{include('app/work/members/_tabs.html.twig')   }}
     <div class="controls">
         <a href="{{ path('work.members.edit', {'id': member.id}) }}" class="btn btn-primary">Edit</a>
         <a href="{{ path('work.members.move', {'id': member.id}) }}" class="btn btn-primary">Move</a>
@@ -23,12 +23,7 @@
                 <button type="submit" class="btn btn-danger">Archive</button>
             </form>
         {% endif %}
-        {% if member.archived %}
-            <form action="{{ path('work.members.reinstate', {'id': member.id}) }}" method="post" onsubmit="return confirm('Are you sure?')">
-                <input type="hidden" name="token" value="{{ csrf_token('reinstate') }}" />
-                <button type="submit" class="btn btn-success">Reinstate</button>
-            </form>
-        {% endif %}
+
     </div>
 
     <div class="box">

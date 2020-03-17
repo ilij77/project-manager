@@ -18,7 +18,7 @@ class StatusWidget extends AbstractExtension
 
 	public function status(Environment $twig,string $status):string
 	{
-		return $twig->render('widget/work/member.status.hnml.twig',['status'=>$status]);
+		return $twig->render('Widget/work/members/member/status.html.twig',['status'=>$status]);
 
 	}
 }
