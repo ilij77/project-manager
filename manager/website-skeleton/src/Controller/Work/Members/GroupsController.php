@@ -60,7 +60,7 @@ class GroupsController extends AbstractController
 				$handler->handle($command);
 				return $this->redirectToRoute('work.members.groups');
 			}catch (\DomainException $e){
-				$this->logger->error($e->getMessage(),['exception'=>$e]);
+				$this->logger->warning($e->getMessage(),['exception'=>$e]);
 				$this->addFlash('error',$e->getMessage());
 			}
 		}
@@ -88,7 +88,7 @@ class GroupsController extends AbstractController
 				$handler->handle($command);
 				return $this->redirectToRoute('work.members.groups.show',['id'=>$group->getId()]);
 			}catch (\DomainException $e){
-				$this->logger->error($e->getMessage(),['exception'=>$e]);
+				$this->logger->warning($e->getMessage(),['exception'=>$e]);
 				$this->addFlash('error',$e->getMessage());
 			}
 		}
@@ -116,7 +116,7 @@ class GroupsController extends AbstractController
 			$handler->handle($command);
 			return $this->redirectToRoute('work.members.groups');
 		}catch (\DomainException $e){
-			$this->logger->error($e->getMessage(),['exception'=>$e]);
+			$this->logger->warning($e->getMessage(),['exception'=>$e]);
 			$this->addFlash('error',$e->getMessage());
 		}
 		return $this->redirectToRoute('work.members.groups.show',['id'=>$group->getId()]);

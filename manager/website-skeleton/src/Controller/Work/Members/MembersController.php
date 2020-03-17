@@ -93,7 +93,7 @@ class MembersController extends AbstractController
 				$handler->handle($command);
 				return $this->redirectToRoute('work.members.show', ['id' => $user->getId()]);
 			} catch (\DomainException $e) {
-				$this->logger->error($e->getMessage(), ['exception' => $e]);
+				$this->logger->warning($e->getMessage(), ['exception' => $e]);
 				$this->addFlash('error', $e->getMessage());
 			}
 		}
@@ -120,7 +120,7 @@ class MembersController extends AbstractController
 				$handler->handle($command);
 				return $this->redirectToRoute('work.members.show',['id'=>$member->getId()]);
 			}catch (\DomainException $e){
-				$this->logger->error($e->getMessage(),['exception'=>$e]);
+				$this->logger->warning($e->getMessage(),['exception'=>$e]);
 				$this->addFlash('error',$e->getMessage());
 			}
 		}
@@ -150,7 +150,7 @@ class MembersController extends AbstractController
 				$handler->handle($command);
 				return $this->redirectToRoute('work.members.show', ['id' => $member->getId()]);
 			} catch (\DomainException $e) {
-				$this->logger->error($e->getMessage(), ['exception' => $e]);
+				$this->logger->warning($e->getMessage(), ['exception' => $e]);
 				$this->addFlash('error', $e->getMessage());
 			}
 		}
@@ -178,7 +178,7 @@ class MembersController extends AbstractController
 		try{
 			$handler->handle($command);
 		}catch (\DomainException $e){
-			$this->logger->error($e->getMessage(),['exception'=>$e]);
+			$this->logger->warning($e->getMessage(),['exception'=>$e]);
 			$this->addFlash('error',$e->getMessage());
 		}
 		return $this->redirectToRoute('work.members.show',['id'=>$member->getId()]);
@@ -205,7 +205,7 @@ class MembersController extends AbstractController
 		try{
 			$handler->handle($command);
 		}catch (\DomainException $e){
-			$this->logger->error($e->getMessage(),['exception'=>$e]);
+			$this->logger->warning($e->getMessage(),['exception'=>$e]);
 			$this->addFlash('error',$e->getMessage());
 		}
 		return $this->redirectToRoute('work.members.show',['id'=>$member->getId()]);
