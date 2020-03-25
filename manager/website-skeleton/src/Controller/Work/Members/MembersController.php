@@ -193,7 +193,7 @@ class MembersController extends AbstractController
 	 * @param Reinstate\Handler $handler
 	 * @return Response
 	 */
-	public function block(Member $member, Request $request, Reinstate\Handler $handler):Response
+	public function reinstate(Member $member, Request $request, Reinstate\Handler $handler):Response
 	{
 		if (!$this->isCsrfTokenValid('reinstate',$request->request->get('token'))){
 			return $this->redirectToRoute('work.members.show',['id'=>$member->getId()]);
