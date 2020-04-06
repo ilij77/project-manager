@@ -12,13 +12,13 @@ class StatusWidget extends AbstractExtension
 	public function getFunctions()
 	{
 		return [
-			new TwigFunction('member_status',[$this,'status'],['needs_environment'=>true,'is_safe'=>['html']]),
+			new TwigFunction('project_status',[$this,'status'],['needs_environment'=>true,'is_safe'=>['html']]),
 		];
 	}
 
 	public function status(Environment $twig,string $status):string
 	{
-		return $twig->render('Widget/work/members/member/status.html.twig',['status'=>$status]);
+		return $twig->render('Widget/work/projects/project/status.html.twig',['status'=>$status]);
 
 	}
 }

@@ -21,7 +21,7 @@ use App\Model\Work\UseCase\Projects\Project\Remove;
 /**
  * @Route("/work/projects/{project_id}/settings",name="work.projects.project.settings")
  * @ParamConverter("project",options={"id"="project_id"})
- * @IsGranted("ROLE_WORK_MANAGER_PROJECTS")
+ * @IsGranted("ROLE_WORK_MANAGE_PROJECTS")
  */
 class SettingsController extends AbstractController
 {

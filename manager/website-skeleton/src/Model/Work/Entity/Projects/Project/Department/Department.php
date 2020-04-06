@@ -1,26 +1,28 @@
 <?php
+
 declare(strict_types=1);
+
 namespace App\Model\Work\Entity\Projects\Project\Department;
+
 use App\Model\Work\Entity\Projects\Project\Project;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity
  * @ORM\Table(name="work_projects_project_departments")
  */
 class Department
 {
-
 	/**
 	 * @var Project
-	 * @ORM\ManyToOne(targetEntity="App\Model\Work\Entity\Projects\Project\Project",inversedBy="departments")
-	 * @ORM\JoinColumn(name="project_id",referencedColumnName="id",nullable=false)
+	 * @ORM\ManyToOne(targetEntity="App\Model\Work\Entity\Projects\Project\Project", inversedBy="departments")
+	 * @ORM\JoinColumn(name="project_id", referencedColumnName="id", nullable=false)
 	 */
 	private $project;
 	/**
 	 * @var Id
 	 * @ORM\Column(type="work_projects_project_department_id")
-	 * @ORM\Id()
+	 * @ORM\Id
 	 */
 	private $id;
 	/**
@@ -29,34 +31,31 @@ class Department
 	 */
 	private $name;
 
-	public function __construct(Project$project, Id $id, string $name)
+	public function __construct(Project $project, Id $id, string $name)
 	{
-
 		$this->project = $project;
 		$this->id = $id;
 		$this->name = $name;
 	}
 
-	/**
-	 * @return Id
-	 */
+	public function isNameEqual(string $name): bool
+	{
+		return $this->name === $name;
+	}
+
 	public function getId(): Id
 	{
 		return $this->id;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getName(): string
 	{
 		return $this->name;
 	}
 
-	public function isNameEqual(string $name):bool
+	public function edit(string $name)
 	{
-		return $this->name===$name;
+		$this->name=$name;
 
 	}
-
 }

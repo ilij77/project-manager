@@ -32,9 +32,9 @@ class SidebarMenu
 			->setLinkAttribute('class','nav-link');
 		$menu->addChild('Work')->setAttribute('class','nav-title');
 
-		$menu->addChild('Projects',['route'=>'work_projects'])
+		$menu->addChild('Projects',['route'=>'work.projects'])
 			->setExtra('routes',[
-				['route'=>'work_projects'],
+				['route'=>'work.projects'],
 				['pattern'=>'/^work.projects\..+/']
 			])
 			->setExtra('icon','nav-icon icon-briefcase')

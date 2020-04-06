@@ -87,24 +87,24 @@ class Project
 		}
 		$this->departments->add(new Department($this,$id,$name));
 
+
 	}
 
-	public function editDepartment(DepartmentId $id,string $name):void
+	public function editDepartment(DepartmentId $id, string $name): void
 	{
-		foreach ($this->departments as $current){
-			if ($current->getId()->isEqual($id)){
+		foreach ($this->departments as $current) {
+			if ($current->getId()->isEqual($id)) {
 				$current->edit($name);
 				return;
 			}
 		}
 		throw new \DomainException('Department is not found.');
-
 	}
 	public function removeDepartment(DepartmentId $id):void
 	{
 		foreach ($this->departments as $department){
 			if ($department->getId()->isEqual($id)){
-				$current->removeElement($department);
+				$this->departments->removeElement($department);
 				return;
 			}
 		}
@@ -146,6 +146,17 @@ class Project
 
 	public function getDepartments()
 	{
-		return $this->departments;
+		return $this->departments->toArray();
+	}
+
+	public function getDepartment(DepartmentId $id):Department
+	{
+		foreach ($this->departments as $department){
+			if ($department->getId()->getValue()){
+				return $department;
+			}
+		}
+		throw new \DomainException('Department is not found.');
+
 	}
 }
