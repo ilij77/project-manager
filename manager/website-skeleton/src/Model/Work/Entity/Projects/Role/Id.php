@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Model\Work\Entity\Members\Member;
+namespace App\Model\Work\Entity\Projects\Role;
 
 
 use Ramsey\Uuid\Uuid;
@@ -31,12 +31,6 @@ class Id
 	public function __toString():string
 	{
 		return $this->value;
-
-	}
-
-	public function isEqual(self $other):bool
-	{
-		return $this->getValue() === $other->getValue();
 
 	}
 
