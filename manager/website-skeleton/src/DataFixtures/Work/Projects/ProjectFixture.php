@@ -2,19 +2,32 @@
 declare(strict_types=1);
 namespace App\DataFixtures\Work\Projects;
 
+use App\DataFixtures\Work\Members\MembersFixture;
+use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Department\Id as DepartmentId;
 use App\Model\Work\Entity\Projects\Project\Id;
 use App\Model\Work\Entity\Projects\Project\Project;
+use App\Model\Work\Entity\Projects\Role\Role;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class ProjectFixture extends Fixture
+class ProjectFixture extends Fixture implements DependentFixtureInterface
 {
 	public function load(ObjectManager $manager)
 	{
+		/**
+		 * @var Member $admin
+		 */
+		$admin=$this->getReference(MembersFixture::REFERENCE_ADMIN);
+		/**
+		 * @var Role $manage
+		 */
+		$manage=$this->getReference(RoleFixture::REFERENCE_MANAGER);
 		$active=$this->createProject('First Project',1);
-		$active->addDepartment(DepartmentId::next(),'Development');
+		$active->addDepartment($development=DepartmentId::next(),'Development');
 		$active->addDepartment(DepartmentId::next(),'Marketing');
+		$active->addMember($admin,[$development],[$manage]);
 		$manager->persist($active);
 
 		$active=$this->createProject('Second Project',2);
@@ -41,6 +54,15 @@ class ProjectFixture extends Fixture
 			$name,
 			$sort
 		);
+
+	}
+
+	public function getDependencies():array
+	{
+		return [
+			MembersFixture::class,
+			RoleFixture::class,
+		];
 
 	}
 }

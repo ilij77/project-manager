@@ -4,8 +4,10 @@ declare(strict_types=1);
 namespace App\ReadModel\Work\Members\Member;
 
 use App\Model\Work\Entity\Members\Member\Member;
+use App\Model\Work\Entity\Members\Member\Status;
 use App\ReadModel\Work\Members\Member\Filter\Filter;
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\FetchMode;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\Pagination\PaginationInterface;
 use Knp\Component\Pager\PaginatorInterface;
@@ -48,7 +50,8 @@ class MemberFetcher
 				'TRIM(CONCAT(m.name_first, \' \', m.name_last)) AS name',
 				'm.email',
 				'g.name as group',
-				'm.status'
+				'm.status',
+				'(SELECT COUNT(*) FROM work_projects_project_memberships ms WHERE ms.member_id = m.id) as membership_count'
 			)
 			->from('work_members_members', 'm')
 			->innerJoin('m', 'work_members_groups', 'g', 'm.group_id = g.id');
@@ -91,6 +94,25 @@ class MemberFetcher
 			->where('id=:id')
 			->setParameter(':id',$id)
 			->execute()->fetchColumn()>0;
+	}
+
+	public function activeGroupList():array
+	{
+		$stmt= $this->connection->createQueryBuilder()
+			->select([
+				'm.id',
+				'TRIM(CONCAT(m.name_first, \' \', m.name_last)) AS name',
+				'g.name AS group',
+				'm.status'
+			])
+			->from('work_members_members','m')
+			->leftJoin('m','work_members_groups','g','g.id=m.group.id')
+			->andWhere('m.status=:status')
+			->setParameter(':status',Status::ACTIVE)
+			->orderBy('g.name')->addOrderBy('name')
+			->execute();
+		return $stmt->fetchAll(FetchMode::ASSOCIATIVE);
+
 	}
 
 }

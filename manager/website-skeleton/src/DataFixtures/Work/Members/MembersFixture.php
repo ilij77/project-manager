@@ -17,27 +17,30 @@ use Doctrine\Persistence\ObjectManager;
 
 class MembersFixture extends Fixture implements DependentFixtureInterface
 {
+	public const REFERENCE_ADMIN='work_member_admin';
 	public function load(ObjectManager $manager)
 	{
 		/**
 		 * @var User $admin
 		 * @var User $user
 		 */
-		$admin=$this->getReference(UserFixture::REFERENCE_ADMIN);
-		$user=$this->getReference(UserFixture::REFERENCE_USER);
+		$admin = $this->getReference(UserFixture::REFERENCE_ADMIN);
+		$user = $this->getReference(UserFixture::REFERENCE_USER);
 
 		/**
 		 * @var Group $staff
 		 * @var Group $customers
 		 */
-		$staff=$this->getReference(GroupFixture::REFERENCE_STAFF);
-		$customers=$this->getReference(GroupFixture::REFERENCE_CUSTOMERS);
+		$staff = $this->getReference(GroupFixture::REFERENCE_STAFF);
+		$customers = $this->getReference(GroupFixture::REFERENCE_CUSTOMERS);
 
-		$member=$this->createMember($admin,$staff);
+		$member = $this->createMember($admin, $staff);
+		$manager->persist($member);
+		$this->setReference(self::REFERENCE_ADMIN, $member);
+
+		$member = $this->createMember($user, $customers);
 		$manager->persist($member);
 
-		$member=$this->createMember($user,$customers);
-		$manager->persist($member);
 		$manager->flush();
 
 
