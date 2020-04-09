@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller\Profile\OAuth;
 
 
+use App\Controller\ErrorHandler;
 use App\Model\User\UseCase\Network\Attach\Command;
 use App\Model\User\UseCase\Network\Attach\Handler;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
@@ -18,14 +19,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class FacebookController extends AbstractController
 {
 
-	private $logger;
 
-	public function __construct(LoggerInterface $logger)
+
+	private $errors;
+
+	public function __construct(ErrorHandler $errors)
 	{
 
-		$this->logger = $logger;
-	}
 
+		$this->errors = $errors;
+	}
+/*
 	/**
 	 * @Route("/check",name="profile.oauth.facebook")
 	 * @param ClientRegistry $clientRegistry
@@ -45,7 +49,7 @@ class FacebookController extends AbstractController
 			$this->addFlash('success','Facebook is successfully attached.');
 			return $this->redirectToRoute('profile');
 		} catch (\DomainException $e){
-			$this->logger->warning($e->getMessage(),['exception'=>$e]);
+			$this->errors->handle($e);
 			$this->addFlash('error',$e->getMessage());
 			return $this->redirectToRoute('profile');
 		}

@@ -2,44 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/MembersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200407234356.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Project/Membership.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Add/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Add/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Add/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Remove/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Project/Membership/Remove/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Project/DepartmentFetcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/Voter/Work/ProjectAccess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings/members/assign.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings/members/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings/members/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/ErrorHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/ResetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/ResetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/EmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/EmailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/NameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/NameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/OAuth/DetachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/OAuth/DetachController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/OAuth/FacebookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Profile/OAuth/FacebookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/GroupsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/GroupsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Members/MembersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/MembersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/Settings/SettingsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Members/MembersFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Members/MembersFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Projects/ProjectFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Projects/ProjectFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Projects/RoleFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/DataFixtures/Work/Projects/RoleFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/ProjectSettingsMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/ProjectSettingsMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Project/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Project/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Project/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Project/ProjectRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Role/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Role/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/User/Filter/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/Member/MemberFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Members/Member/MemberFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Project/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Project/Filter/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/RoleFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/RoleFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings/departments/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings/departments/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/roles/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/roles/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/RolesController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +242,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/project/settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -393,7 +372,8 @@
       <workItem from="1586127113109" duration="10383000" />
       <workItem from="1586209655686" duration="14473000" />
       <workItem from="1586296365902" duration="15838000" />
-      <workItem from="1586383045974" duration="12114000" />
+      <workItem from="1586383045974" duration="12460000" />
+      <workItem from="1586468323785" duration="2483000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 2.1">
       <created>1568239605375</created>
@@ -710,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586297923959</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Add memberships entity,controller,usecase.">
+      <created>1586395342224</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586395342224</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +718,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Install Core Ui theme." />
     <MESSAGE value="Install Predis/Predis" />
     <MESSAGE value="Add user confirm console command" />
     <MESSAGE value="Add profile page." />
@@ -756,6 +742,7 @@
     <MESSAGE value="Add project department model and fixture." />
     <MESSAGE value="Add project department settings." />
     <MESSAGE value="Add project department controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project department controller." />
+    <MESSAGE value="Add memberships entity,controller,usecase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add memberships entity,controller,usecase." />
   </component>
 </project>
