@@ -115,4 +115,26 @@ class MemberFetcher
 
 	}
 
+	public function activeDepartmentListForProject(string $project):array
+	{
+		$stmt = $this->connection->createQueryBuilder()
+			->select(
+				'm.id',
+				'CONCAT(m.name_first, \' \', m.name_last) AS name',
+				'd.name AS department'
+				)
+			->from('work_members_members', 'm')
+			->innerJoin('m', 'work_projects_project_memberships','ms','ms.membership_id = ms.id')
+			->innerJoin('ms','work_projects_project_memberships_departments','msd','msd.membership.id = ms.id')
+			->innerJoin('msd','work_projects_project_departments','d','d.id = ms.department.id')
+			->andWhere('m.status=:status AND ms.project_id =:project')
+			->setParameter(':status',Status::ACTIVE)
+			->setParameter(':project',$project)
+			->orderBy('d.name')->addOrderBy('name')
+			->execute();
+		return $stmt->fetchAll(FetchMode::ASSOCIATIVE);
+
+
+
+	}
 }

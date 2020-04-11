@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace App\Menu\Work;
+namespace App\Menu\Work\Projects;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
