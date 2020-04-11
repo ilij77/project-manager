@@ -13,7 +13,7 @@ class TypeType extends StringType
 
 	public function convertToDatabaseValue($value, AbstractPlatform $platform)
 	{
-		return $value instanceof Type ? $value->geValue() : $value;
+		return $value instanceof Type ? $value->getName() : $value;
 
 	}
 

@@ -12,7 +12,7 @@ class StatusType extends StringType
 	public const NAME='work_projects_task_status';
 	public function convertToDatabaseValue($value, AbstractPlatform $platform)
 	{
-		return $value instanceof Status ? $value->geValue():$value;
+		return $value instanceof Status ? $value->getName():$value;
 
 	}
 	public function convertToPHPValue($value, AbstractPlatform $platform)

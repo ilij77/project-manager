@@ -12,7 +12,7 @@ class IdType extends IntegerType
 	public const NAME='work_projects_task_id';
 public function convertToDatabaseValue($value, AbstractPlatform $platform)
 {
-	return $value instanceof Id ? $value->geValue():$value;
+	return $value instanceof Id ? $value->getValue():$value;
 
 }
 public function convertToPHPValue($value, AbstractPlatform $platform)
