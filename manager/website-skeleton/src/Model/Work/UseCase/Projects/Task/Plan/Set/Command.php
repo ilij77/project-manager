@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace App\Model\Work\UseCase\Projects\Plan\Set;
+namespace App\Model\Work\UseCase\Projects\Task\Plan\Set;
 use App\Model\Work\Entity\Projects\Task\Task;
 use Symfony\Component\Validator\Constraints as Assert;
 

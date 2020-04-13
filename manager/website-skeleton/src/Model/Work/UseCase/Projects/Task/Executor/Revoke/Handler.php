@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Model\Work\UseCase\Projects\Task\Executor\Remove;
+namespace App\Model\Work\UseCase\Projects\Task\Executor\Revoke;
 
 
 use App\Model\Flusher;

@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-namespace App\Model\Work\UseCase\Projects\Plan\Set;
+namespace App\Model\Work\UseCase\Projects\Task\Plan\Set;
 
 
 

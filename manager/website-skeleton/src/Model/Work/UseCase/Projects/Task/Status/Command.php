@@ -25,7 +25,7 @@ class Command
 		$this->id=$id;
 	}
 
-	public function fromTask(Task $task):self
+	public static function fromTask(Task $task):self
 	{
 		$command=new self($task->getId()->getValue());
 		$command->status=$task->getStatus()->getName();

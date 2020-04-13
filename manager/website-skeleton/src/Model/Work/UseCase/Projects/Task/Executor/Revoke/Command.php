@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace App\Model\Work\UseCase\Projects\Task\Executor\Remove;
+namespace App\Model\Work\UseCase\Projects\Task\Executor\Revoke;
 use App\Model\Work\Entity\Projects\Task\Task;use App\Model\Work\Entity\Projects\Task\Type;
 use Symfony\Component\Validator\Constraints as Assert;
 

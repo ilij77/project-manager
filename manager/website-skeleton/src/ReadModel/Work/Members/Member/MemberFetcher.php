@@ -42,7 +42,7 @@ class MemberFetcher
 	 * @param string $direction
 	 * @return PaginationInterface
 	 */
-	public function all(Filter $filter, int $page, int $size, string $sort, string $direction):PaginationInterface
+	public function all(Filter $filter, int $page, int $size, string $sort, string $direction): PaginationInterface
 	{
 		$qb = $this->connection->createQueryBuilder()
 			->select(
@@ -51,7 +51,7 @@ class MemberFetcher
 				'm.email',
 				'g.name as group',
 				'm.status',
-				'(SELECT COUNT(*) FROM work_projects_project_memberships ms WHERE ms.member_id = m.id) as membership_count'
+				'(SELECT COUNT(*) FROM work_projects_project_memberships ms WHERE ms.member_id = m.id) as memberships_count'
 			)
 			->from('work_members_members', 'm')
 			->innerJoin('m', 'work_members_groups', 'g', 'm.group_id = g.id');
@@ -80,10 +80,9 @@ class MemberFetcher
 			throw new \UnexpectedValueException('Cannot sort by ' . $sort);
 		}
 
-		$qb->orderBy( $sort , $direction === 'desc' ? 'desc' : 'asc');
+		$qb->orderBy($sort, $direction === 'desc' ? 'desc' : 'asc');
 
 		return $this->paginator->paginate($qb, $page, $size);
-
 	}
 
 	public function exists(string $id):bool
@@ -101,12 +100,12 @@ class MemberFetcher
 		$stmt= $this->connection->createQueryBuilder()
 			->select([
 				'm.id',
-				'TRIM(CONCAT(m.name_first, \' \', m.name_last)) AS name',
+				'CONCAT(m.name_first, \' \', m.name_last) AS name',
 				'g.name AS group',
-				'm.status'
+
 			])
 			->from('work_members_members','m')
-			->leftJoin('m','work_members_groups','g','g.id=m.group.id')
+			->leftJoin('m','work_members_groups','g','g.id=m.group_id')
 			->andWhere('m.status=:status')
 			->setParameter(':status',Status::ACTIVE)
 			->orderBy('g.name')->addOrderBy('name')
