@@ -5,33 +5,34 @@ namespace App\Tests\Functional\Users;
 
 
 use App\Tests\Functional\AuthFixture;
+use App\Tests\Functional\DbWebTestCase;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class IndexTest extends WebTestCase
+class IndexTest extends DbWebTestCase
 {
 	public function testGuest(): void
 	{
-		$client = static::createClient();
-		$client->request('GET', '/users');
 
-		$this->assertSame(302, $client->getResponse()->getStatusCode());
-		$this->assertSame('/login', $client->getResponse()->headers->get('Location'));
+		$this->client->request('GET', '/users');
+
+		$this->assertSame(302, $this->client->getResponse()->getStatusCode());
+		$this->assertSame('/login', $this->client->getResponse()->headers->get('Location'));
 	}
 
 	public function testUser(): void
 	{
-		$client = static::createClient([], AuthFixture::userCredentials());
-		$client->request('GET', '/users');
+		$this->client->setServerParameters(AuthFixture::userCredentials());
+		$this->client->request('GET', '/users');
 
-		$this->assertSame(403, $client->getResponse()->getStatusCode());
+		$this->assertSame(403, $this->client->getResponse()->getStatusCode());
 	}
 
 	public function testAdmin(): void
 	{
-		$client = static::createClient([], AuthFixture::adminCredentials());
-		$crawler = $client->request('GET', '/users');
+		$this->client->setServerParameters(AuthFixture::adminCredentials());
+		$crawler = $this->client->request('GET', '/users');
 
-		$this->assertSame(200, $client->getResponse()->getStatusCode());
+		$this->assertSame(200, $this->client->getResponse()->getStatusCode());
 		$this->assertContains('Users', $crawler->filter('title')->text());
 	}
 

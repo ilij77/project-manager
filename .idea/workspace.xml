@@ -5,40 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services_dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/Projects/TaskPresetMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Create/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Create/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Create/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Create/NameRow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Create/NameType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/NameRow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/NamesType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/_presets.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/AuthFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/CreateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/IndexTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/ShowTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/UsersFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/DbWebTestCase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services_test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services_test.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200410221415.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200410221415.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Task/TaskRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/Entity/Projects/Task/TaskRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Priority/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task/Priority/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Security/Voter/Work/Projects/TaskAccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/Voter/Work/Projects/TaskAccess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/override/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/override/menu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/members/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Builder/User/UserBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.ready" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/CreateTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/IndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/IndexTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/ShowTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/ShowTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -321,7 +294,17 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8524cfc7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8524cfc7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@550e6b51" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -398,14 +381,7 @@
       <workItem from="1586691227679" duration="5772000" />
       <workItem from="1586727596985" duration="16331000" />
       <workItem from="1586816055268" duration="15217000" />
-      <workItem from="1586899831316" duration="12687000" />
-    </task>
-    <task id="LOCAL-00002" summary="Урок 2.1">
-      <created>1568245346390</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1568245346390</updated>
+      <workItem from="1586899831316" duration="15294000" />
     </task>
     <task id="LOCAL-00003" summary="Урок 2.1">
       <created>1568245458371</created>
@@ -743,7 +719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586743995609</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Add functional tests.">
+      <created>1586912595676</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586912595676</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -764,7 +747,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changes theme styles." />
     <MESSAGE value="Correct migrations." />
     <MESSAGE value="Add email changing." />
     <MESSAGE value="Add profile network attach." />
@@ -789,6 +771,7 @@
     <MESSAGE value="Add task entity,tests and usecase." />
     <MESSAGE value="Add task fixture and install faker." />
     <MESSAGE value="Add task controllers and widgets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add task controllers and widgets." />
+    <MESSAGE value="Add functional tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add functional tests." />
   </component>
 </project>
