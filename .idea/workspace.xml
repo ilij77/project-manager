@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/DbWebTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/MarkdownExtension.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.ready" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/HomeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/CreateTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/IndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/IndexTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/ShowTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users/ShowTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -381,14 +382,7 @@
       <workItem from="1586691227679" duration="5772000" />
       <workItem from="1586727596985" duration="16331000" />
       <workItem from="1586816055268" duration="15217000" />
-      <workItem from="1586899831316" duration="15294000" />
-    </task>
-    <task id="LOCAL-00003" summary="Урок 2.1">
-      <created>1568245458371</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1568245458371</updated>
+      <workItem from="1586899831316" duration="16382000" />
     </task>
     <task id="LOCAL-00004" summary="Symfony установлена">
       <created>1568331920361</created>
@@ -726,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586912595676</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add tests transactions.">
+      <created>1586915269723</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1586915269723</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -747,7 +748,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correct migrations." />
     <MESSAGE value="Add email changing." />
     <MESSAGE value="Add profile network attach." />
     <MESSAGE value="Add profile name." />
@@ -772,6 +772,7 @@
     <MESSAGE value="Add task fixture and install faker." />
     <MESSAGE value="Add task controllers and widgets." />
     <MESSAGE value="Add functional tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functional tests." />
+    <MESSAGE value="Add tests transactions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests transactions." />
   </component>
 </project>

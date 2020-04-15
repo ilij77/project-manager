@@ -61,6 +61,9 @@ services:
         tags:
             - { name: knp_menu.menu_builder, method: build, alias: work_projects_task_presets }
 
+    cebe\markdown\MarkdownExtra:
+
+
 
 
     # add more service definitions when explicit configuration is needed
