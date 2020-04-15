@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Test\Functional;
+namespace App\Tests\Functional;
 
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
@@ -17,15 +17,21 @@ class HomeTest extends WebTestCase
 
 	}
 
-	public function testSuccess():void
+	public function testUser():void
 	{
-		$client=static ::createClient([],[
-			'PHP_AUTH_USER'=>'admin@app.test',
-			'PHP_AUTH_PW'=>'password',
-		]);
+		$client=static::createClient([],AuthFixture::userCredentials());
 		$crawler=$client->request('GET','/');
 		$this->assertSame(200,$client->getResponse()->getStatusCode());
-		$this->assertSame('Home',$crawler->filter('title')->text());
+		$this->assertContains('Home',$crawler->filter('title')->text());
+
+	}
+
+	public function testAdmin():void
+	{
+		$client=static::createClient([],AuthFixture::adminCredentials());
+		$crawler=$client->request('GET','/');
+		$this->assertSame(200,$client->getResponse()->getStatusCode());
+		$this->assertContains('Home',$crawler->filter('title')->text());
 
 	}
 

@@ -22,7 +22,7 @@ final class Version20200410221415 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'postgresql', 'Migration can only be executed safely on \'postgresql\'.');
 
-        $this->addSql('CREATE SEQUENCE work_projects_tasks_seq INCREMENT BY 1 MINVALUE 1 START 1');
+        $this->addSql('CREATE SEQUENCE work_projects_tasks_seq INCREMENT BY 1 MINVALUE 1 START 1000');
         $this->addSql('ALTER TABLE user_users ALTER id TYPE UUID');
         $this->addSql('ALTER TABLE user_users ALTER id DROP DEFAULT');
         $this->addSql('ALTER TABLE user_users ALTER email TYPE VARCHAR(255)');

@@ -52,7 +52,8 @@ class TaskRepository
 
 	public function nextId():Id
 	{
-		return new Id((int)$this->connection->query('SELECT nextval(\'work_project_tasks_seq\')')->fetchColumn());
+		return new Id((int)$this->connection->query('SELECT nextval(\'work_projects_tasks_seq\')')->fetchColumn());
+
 
 	}
 

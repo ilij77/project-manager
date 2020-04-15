@@ -64,6 +64,62 @@ class TasksController extends AbstractController
 	}
 
 	/**
+	 * @Route("/me",name=".me")
+	 * @param Project $project
+	 * @param Request $request
+	 * @return Response
+	 */
+	public function me(Project $project, Request $request):Response
+	{
+		$this->denyAccessUnlessGranted(ProjectAccess::VIEW,$project);
+		$filter=Filter\Filter::forProject($project->getId()->getValue());
+		$form=$this->createForm(Filter\Form::class,$filter);
+		$form->handleRequest($request);
+		$pagination=$this->tasks->all(
+			$filter->forExecutor($this->getUser()->getId()),
+			$request->query->getInt('page',1),
+			self::PER_PAGE,
+			$request->query->get('sort','t.date'),
+			$request->query->get('direction','desc')
+		);
+		return $this->render('app/work/projects/tasks/index.html.twig',[
+			'project'=>$project,
+			'pagination'=>$pagination,
+			'form'=>$form->createView(),
+		]);
+
+
+	}
+
+	/**
+	 * @Route("/own",name=".own")
+	 * @param Project $project
+	 * @param Request $request
+	 * @return Response
+	 */
+	public function own(Project $project, Request $request):Response
+	{
+		$this->denyAccessUnlessGranted(ProjectAccess::VIEW,$project);
+		$filter=Filter\Filter::forProject($project->getId()->getValue());
+		$form=$this->createForm(Filter\Form::class,$filter);
+		$form->handleRequest($request);
+		$pagination=$this->tasks->all(
+			$filter->forAuthor($this->getUser()->getId()),
+			$request->query->getInt('page',1),
+			self::PER_PAGE,
+			$request->query->get('sort','t.date'),
+			$request->query->get('direction','desc')
+		);
+		return $this->render('app/work/projects/tasks/index.html.twig',[
+			'project'=>$project,
+			'pagination'=>$pagination,
+			'form'=>$form->createView(),
+		]);
+
+
+	}
+
+	/**
 	 * @Route("/create",name=".create")
 	 * @param Project $project
 	 * @param Request $request
@@ -73,12 +129,13 @@ class TasksController extends AbstractController
 	public function create(Project $project, Request $request, Create\Handler $handler):Response
 	{
 		$this->denyAccessUnlessGranted(ProjectAccess::VIEW,$project);
-		$command=new Create\Command(
+		$command = new Create\Command(
 			$project->getId()->getValue(),
 			$this->getUser()->getId()
 		);
-		if ($parent=$request->query->get('parent')){
-			$command->$parent=$parent;
+
+		if ($parent = $request->query->get('parent')) {
+			$command->parent = $parent;
 		}
 
 		$form = $this->createForm(Create\Form::class, $command);
@@ -87,7 +144,7 @@ class TasksController extends AbstractController
 		if ($form->isSubmitted() && $form->isValid()) {
 			try {
 				$handler->handle($command);
-				return $this->redirectToRoute('work.projects.project.tasks',['project_id'=>$project->getId()]);
+				return $this->redirectToRoute('work.projects.project.tasks', ['project_id' => $project->getId()]);
 			} catch (\DomainException $e) {
 				$this->errors->handle($e);
 				$this->addFlash('error', $e->getMessage());
@@ -95,8 +152,8 @@ class TasksController extends AbstractController
 		}
 
 		return $this->render('app/work/projects/project/tasks/create.html.twig', [
+			'project' => $project,
 			'form' => $form->createView(),
-			'project'=>$project,
 		]);
 
 

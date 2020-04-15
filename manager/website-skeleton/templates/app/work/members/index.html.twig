@@ -49,7 +49,7 @@
                     <td><a href="{{ path('work.members.show', {'id': member.id}) }}">{{ member.name }}</a></td>
                     <td>{{ member.email }}</td>
                     <td>{{ member.group }}</td>
-                    <td>{{ member.membership_count }}</td>
+                    <td>{{ member.memberships_count }}</td>
                     <td>{{ member_status(member.status) }}</td>
                 </tr>
             {% endfor %}

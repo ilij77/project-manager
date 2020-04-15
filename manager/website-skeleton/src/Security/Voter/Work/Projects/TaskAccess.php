@@ -11,6 +11,7 @@ use App\Security\UserIdentity;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class TaskAccess extends Voter
 {
@@ -34,12 +35,14 @@ class TaskAccess extends Voter
 	protected function voteOnAttribute(string $attribute, $subject, TokenInterface $token)
 	{
 		$user = $token->getUser();
-		if (!$user instanceof UserIdentity) {
+		if (!$user instanceof UserInterface) {
 			return false;
 		}
+
 		if (!$subject instanceof Task) {
 			return false;
 		}
+
 		switch ($attribute) {
 			case self::VIEW:
 				return
@@ -47,15 +50,16 @@ class TaskAccess extends Voter
 					$subject->getProject()->isMemberGranted(new Id($user->getId()), Permission::VIEW_TASKS);
 				break;
 			case self::MANAGE:
-				$this->security->isGranted('ROLE_WORK_MANAGE_PROJECTS') ||
-				$subject->getProject()->isMemberGranted(new Id($user->getId()), Permission::MANAGE_TASKS);
+				return
+					$this->security->isGranted('ROLE_WORK_MANAGE_PROJECTS') ||
+					$subject->getProject()->isMemberGranted(new Id($user->getId()), Permission::MANAGE_TASKS);
 				break;
 			case self::DELETE:
 				return
 					$this->security->isGranted('ROLE_WORK_MANAGE_PROJECTS');
-
 				break;
 		}
+
 		return false;
 		}
 	}
