@@ -4,14 +4,26 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/exercise_html_purifier.yaml" afterDir="false" />
+    <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="Insta.">
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/Work/Processor/Driver/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/Work/Processor/Driver/MemberDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/Work/Processor/Driver/TaskDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/Work/Processor/ProcessorExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension/Work/Processor/ProcessorMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/processor/work/member.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/processor/work/task.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/exercise_html_purifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/exercise_html_purifier.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/Filter/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,25 +243,25 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/config" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/Widget/work/projects" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/Projects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/config" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -381,14 +393,8 @@
       <workItem from="1586691227679" duration="5772000" />
       <workItem from="1586727596985" duration="16331000" />
       <workItem from="1586816055268" duration="15217000" />
-      <workItem from="1586899831316" duration="16908000" />
-    </task>
-    <task id="LOCAL-00005" summary="Урок 2.2 финал">
-      <created>1568407179236</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1568407179236</updated>
+      <workItem from="1586899831316" duration="17279000" />
+      <workItem from="1586986202587" duration="10819000" />
     </task>
     <task id="LOCAL-00006" summary="Урок 3.1 Финал">
       <created>1568846137530</created>
@@ -726,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586916275612</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Install Purifier.">
+      <created>1586916919642</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1586916919642</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -747,7 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add profile network attach." />
     <MESSAGE value="Add profile name." />
     <MESSAGE value="Add user pages and filter." />
     <MESSAGE value="Correction errors." />
@@ -772,6 +784,7 @@
     <MESSAGE value="Add functional tests." />
     <MESSAGE value="Add tests transactions." />
     <MESSAGE value="Install Markdown." />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Markdown." />
+    <MESSAGE value="Install Purifier." />
+    <option name="LAST_COMMIT_MESSAGE" value="Install Purifier." />
   </component>
 </project>

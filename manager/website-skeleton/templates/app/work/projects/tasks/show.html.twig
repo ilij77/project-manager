@@ -202,10 +202,10 @@
                 </table>
             </div>
 
-            {% if task.content|markdown|purify %}
+            {% if task.content|markdown|purify|work_processor|work_processor_member %}
                 <div class="card">
                     <div class="card-body pb-0">
-                        <p>{{ task.content|nl2br }}</p>
+                        <p>{{ task.content|markdown|purify|work_processor  }}</p>
                     </div>
                 </div>
             {% endif %}

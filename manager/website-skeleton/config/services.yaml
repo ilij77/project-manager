@@ -63,6 +63,26 @@ services:
 
     cebe\markdown\MarkdownExtra:
 
+    App\Twig\Extension\Work\Processor\Driver\TaskDriver:
+        tags: ['app.twig.work_processor.driver']
+
+    App\Twig\Extension\Work\Processor\Driver\MemberDriver:
+        tags: ['app.twig.work_processor.driver']
+
+    App\Twig\Extension\Work\Processor\ProcessorExtension:
+        arguments:
+            - '@App\Twig\Extension\Work\Processor\Driver\TaskDriver'
+
+    App\Twig\Extension\Work\Processor\ProcessorMember:
+        arguments:
+            - '@App\Twig\Extension\Work\Processor\Driver\MemberDriver'
+
+
+
+
+
+
+
 
 
 
