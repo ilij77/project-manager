@@ -20,7 +20,6 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
 *@Route("/work/projects{project_id}/tasks",name="work.projects.project.tasks")
  * @ParamConverter("project",options={"id"="project_id"})
- * @Entity("task",expr="repository.findOneBy({'project':project_id,'id':id})")
  */
 class TasksController extends AbstractController
 {

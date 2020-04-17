@@ -5,10 +5,13 @@ namespace App\Model\Work\Entity\Projects\Task;
 
 
 use App\Model\Work\Entity\Members\Member\Member;
+use App\Model\Work\Entity\Projects\Task\File\File;
+use App\Model\Work\Entity\Projects\Task\File\Info;
 use App\Model\Work\Entity\Projects\Project\Project;
 use Doctrine\Common\Collections\ArrayCollection;
 use Webmozart\Assert\Assert;
 use App\Model\Work\Entity\Members\Member\Id as MemberId;
+use App\Model\Work\Entity\Projects\Task\File\Id as FileId;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -62,6 +65,13 @@ class Task
 	 * @ORM\Column(type="text",nullable=true)
 	 */
 	private $content;
+	/**
+	 * @var ArrayCollection|File[]
+	 * @ORM\OneToMany(targetEntity="App\Model\Work\Entity\Projects\Task\File\File", mappedBy="task", orphanRemoval=true, cascade={"all"})
+	 * @ORM\OrderBy({"date" = "ASC"})
+	 */
+	private $files;
+
 	/**
 	 * @ORM\Column(type="smallint")
 	 */
@@ -122,6 +132,7 @@ class Task
 		$this->priority = $priority;
 		$this->name = $name;
 		$this->content = $content;
+		$this->files = new ArrayCollection();
 		$this->progress=0;
 		$this->status=Status::new();
 		$this->executors=new ArrayCollection();
@@ -131,6 +142,23 @@ class Task
 	{
 		$this->name=$name;
 		$this->content=$content;
+
+	}
+
+	public function addFile(FileId $id,Member $member,\DateTimeImmutable $date,Info $info):void
+	{
+		$this->files->add(new File($this,$id,$member,$date,$info));
+
+	}
+
+	public function removeFile(FileId $id):void
+	{
+		foreach ($this->files as $current){
+			if ($current->getId()->isEqual($id)){
+				$this->files->removeElement($current);
+			}
+		}
+		throw new \DomainException('File is not found.');
 
 	}
 
@@ -361,6 +389,14 @@ class Task
 	{
 		return $this->status->isWorking();
 
+	}
+
+	/**
+	 * @return File[]
+	 */
+	public function getFiles()
+	{
+		return $this->files->toArray();
 	}
 
 }
