@@ -77,6 +77,9 @@ services:
         arguments:
             - '@App\Twig\Extension\Work\Processor\Driver\MemberDriver'
 
+    App\Service\Uploader\FileUploader:
+        arguments: ['@default.storage','%env(STORAGE_BASE_URL)%']
+
 
 
 
