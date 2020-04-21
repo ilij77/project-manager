@@ -5,24 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4da2f5-8e59-4288-813b-f16509af7ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/CalendarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Project/CalendarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Calendar/CalendarFetcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Calendar/Query/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Calendar/Query/Query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Calendar/Result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Widget/Work/Projects/CalendarWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Widget/Work/Projects/OwnTasksWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Widget/Work/Projects/TaskForMeWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Widget/work/projects/calendar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Widget/work/projects/own-tasks.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/calendar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks-for-me.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/Task/CommentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Migrations/Version20200420222358.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/AuthorId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/AuthorIdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/CommentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/Entity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/Entity/Comment/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Create/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Edit/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Edit/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Edit/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Remove/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment/Remove/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Comment/CommentRow.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/CommentFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Security/Voter/Comment/CommentAccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/AuthorId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/AuthorIdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/CommentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/Entity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/Entity/Comment/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Create/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Edit/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Edit/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Edit/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Remove/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/Comment/UseCase/Remove/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/comment/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/MainMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/MainMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/Projects/ProjectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/Projects/ProjectMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,31 +118,7 @@
         <item name="app: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="work_projects_tasks: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="app@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="extensions" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -252,25 +252,25 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/website-skeleton/assets/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/Widget/work/projects" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Twig/Extension" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase/Comment" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/Widget/work/projects" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/tests/Functional/Users" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Work/UseCase/Projects/Task" />
       <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work" />
-      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Menu/Work/Projects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/src/Model/Comment/UseCase" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects/tasks" />
+      <recent name="$PROJECT_DIR$/manager/website-skeleton/templates/app/work/projects" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -315,7 +315,12 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fa06ae46" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -399,14 +404,10 @@
       <workItem from="1587127144575" duration="5073000" />
       <workItem from="1587159989561" duration="3768000" />
       <workItem from="1587169199951" duration="2356000" />
-      <workItem from="1587245442805" duration="8460000" />
-    </task>
-    <task id="LOCAL-00009" summary="Установка ramsey/uuid">
-      <created>1581812839230</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1581812839230</updated>
+      <workItem from="1587245442805" duration="9685000" />
+      <workItem from="1587332365520" duration="9127000" />
+      <workItem from="1587419214087" duration="8689000" />
+      <workItem from="1587505351133" duration="4058000" />
     </task>
     <task id="LOCAL-00010" summary="Add signup logic">
       <created>1581897125157</created>
@@ -744,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587132490843</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Add calendar and some widgets.">
+      <created>1587254067992</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1587254067993</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,7 +773,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Install knp-paginator-bundle." />
     <MESSAGE value="Add sorting." />
     <MESSAGE value="Changed user fetcher." />
     <MESSAGE value="Add work member groups." />
@@ -790,6 +797,7 @@
     <MESSAGE value="Add twig processor and fulltext search." />
     <MESSAGE value="Add task file model." />
     <MESSAGE value="Add file uploading." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file uploading." />
+    <MESSAGE value="Add calendar and some widgets." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add calendar and some widgets." />
   </component>
 </project>
